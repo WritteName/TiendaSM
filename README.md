@@ -42,14 +42,16 @@ npm start
 
 | Método | Ruta | Descripción |
 |--------|------|-------------|
-| GET | `/api/frutas` | Lista productos (frutas) |
-| GET | `/api/vendedores` | Lista vendedores (Cliente) |
-| GET | `/api/ventas` | Lista ventas con producto y vendedor |
+| GET | `/api/productos` | CRUD productos (solo Registrar, Recuperar) |
+| GET | `/api/vendedores` | Lista vendedores |
+| GET | `/api/ventas` | Lista ventas |
 | GET | `/api/ventas/resumen-vendedores` | Monto total por vendedor |
-| POST | `/api/ventas` | Registrar nueva venta (NomProducto, Precio, Kilos, NombreVendedor, FechaAlta opcional) |
+| POST | `/api/ventas` | Registrar Venta |
 
 ## Funcionalidad
 
 - **Ingreso de ventas**: producto, vendedor, precio por kg, kilos vendidos y fecha.
 - **Registro de ventas**: tabla con todas las ventas (fecha, producto, precio, kilos, monto, vendedor).
 - **Monto por vendedor**: resumen con el total vendido por cada vendedor.
+- **Ingreso de productos**: nombre, grupo, precio unitario y kilos disponibles. 
+- **Registro de productos**: tabla con todas las productos (nombre, grupo, precio, stock).
