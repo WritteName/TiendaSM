@@ -1,7 +1,7 @@
 const API_BASE = '';
 
 async function getFrutas() {
-  const res = await fetch(`${API_BASE}/api/frutas`);
+  const res = await fetch(`${API_BASE}/api/productos`);
   if (!res.ok) throw new Error('Error al cargar productos');
   return res.json();
 }

@@ -6,6 +6,7 @@ const config = require('./config.js');
 const frutasRouter = require('./routes/frutas.js');
 const vendedoresRouter = require('./routes/vendedores.js');
 const ventasRouter = require('./routes/ventas.js');
+const productosRouter = require('./routes/productos.js');
 
 const app = express();
 app.use(cors());
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use('/api/frutas', frutasRouter);
 app.use('/api/vendedores', vendedoresRouter);
 app.use('/api/ventas', ventasRouter);
+app.use('/api/productos', productosRouter);
 
 // Cliente
 app.use(express.static(path.join(__dirname, '..', 'client')));
